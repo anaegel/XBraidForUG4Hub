@@ -1,0 +1,53 @@
+{
+  "minUGHubVersion": "1.0.2",
+  "packages": [
+    {
+      "name": "XBraidForUg4",
+      "url": "https://github.com/parnet/XBraidForUG4.git",
+      "repoType": "git",
+      "defaultBranch": "master",
+      "prefix": "plugins",
+      "license": "",
+      "categories": [
+        "ug4",
+        "plugins"
+      ],
+      "dependencies": [
+        {
+          "packages": [
+            {
+              "name": "ugcore",
+              "branch": "master"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "XBraidForUg4App",
+      "url": "https://github.com/parnet/XBraidForUG4App.git",
+      "repoType": "git",
+      "defaultBranch": "master",
+      "prefix": "apps",
+      "license": "",
+      "categories": [
+        "ug4",
+        "apps"
+      ],
+      "dependencies": [
+        {
+          "packages": [
+            {
+              "name": "XBraidForUg4",
+              "branch": "master"
+            },
+            {
+              "name": "ConvectionDiffusion",
+              "branch": "master"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
